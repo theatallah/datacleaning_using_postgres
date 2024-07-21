@@ -15,3 +15,18 @@ For Database i used postgres sql and PGADMIN 4, also i used excel
 
 ## 4. Data Cleaning Process:
 
+### Step 1:
+
+Date column in csv file is transformed to my local system settings which is dd/mm/yyyy using Text to columns feature in excel to avoid import errors in postgres sql
+
+### step 2:
+
+Creating the database in postgres sql to store the tables
+
+### step 3:
+
+Creating the table 
+
+
+
+
