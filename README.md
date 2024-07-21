@@ -25,7 +25,12 @@ Creating the database in postgres sql to store the tables
 
 ### step 3:
 
-Creating the table 
+Creating the table in postgres sql and then uploading the csv file using user interface in pgadmin 4
+
+### step 4:
+
+Creating final table with additional column called rn, in order to detect duplicates, it is sql window function which will check each column and provide no 1 if row is unique or number greater than 1 if duplicate is found
+
 
 
 
