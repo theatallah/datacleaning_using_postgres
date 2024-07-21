@@ -1,4 +1,4 @@
-# datacleaning_using_postgres
+# DataCleaning Process Using Postgres SQL
 
 ## 1. Introduction:
 
@@ -8,3 +8,10 @@ There is CSV file which contains job layoffs by company, city, country ,number o
 ## 2. CSV file used:
 
 CSV File used for this project is [here](https://github.com/theatallah/datacleaning_using_postgres/blob/main/csv%20files/layoffs%20cleaned.csv) 
+
+## 3. Tools used:
+
+For Database i used postgres sql and PGADMIN 4, also i used excel
+
+## 4. Data Cleaning Process:
+
