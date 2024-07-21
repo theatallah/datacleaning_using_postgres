@@ -31,6 +31,14 @@ Creating the table in postgres sql and then uploading the csv file using user in
 
 Creating final table with additional column called rn, in order to detect duplicates, it is sql window function which will check each column and provide no 1 if row is unique or number greater than 1 if duplicate is found
 
+``` sql
+CREATE TABLE final_table AS
+SELECT *,row_number() OVER (PARTITION BY company,job_location,industry,total_laid_off,percentage_laid_off,date_of_layofs,stage,country,funds_raised_millions) AS rn
+FROM jobs_layoffs
+```
+
+###
+
 
 
 
