@@ -25,7 +25,7 @@ Creating the database in postgres sql to store the tables
 
 ### step 3:
 
-Creating the table in postgres sql and then uploading the csv file using user interface in pgadmin 4
+Creating the table jobs_layoffs in postgres sql and then uploading the csv file using user interface in pgadmin 4
 
 ### step 4:
 
@@ -37,7 +37,15 @@ SELECT *,row_number() OVER (PARTITION BY company,job_location,industry,total_lai
 FROM jobs_layoffs
 ```
 
-###
+### step 5:
+
+Where ever column rn is greater than 1 as explained in step 4, means its a duplicate ,so it will be deleted using below sql code 
+
+``` sql
+DELETE FROM final_table
+WHERE rn>1
+```
+
 
 
 
