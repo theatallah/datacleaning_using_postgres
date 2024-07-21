@@ -46,6 +46,17 @@ DELETE FROM final_table
 WHERE rn>1
 ```
 
+### step 6:
+
+Continue to inspect the columns , so we found in 'industry' column, some different variety of namings for crypto, so we updated this column with 'crypto' wherever a row contains crypto word
+
+``` sql
+UPDATE final_table
+SET industry='Crypto'
+WHERE industry LIKE 'Crypto%'
+```
+
+###
 
 
 
