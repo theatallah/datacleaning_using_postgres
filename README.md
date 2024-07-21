@@ -56,8 +56,14 @@ SET industry='Crypto'
 WHERE industry LIKE 'Crypto%'
 ```
 
-###
+### step 7:
 
+some inconsistency in 'country' column where united states in some rows contained '.' , so this inconsistency was eliminated 
+```sql
+UPDATE final_table
+SET country='United States'
+WHERE country='United States.'
+```
 
 
 
