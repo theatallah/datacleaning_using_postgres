@@ -65,6 +65,18 @@ SET country='United States'
 WHERE country='United States.'
 ```
 
+### step 8:
+
+Removing Nulls and blanks, and also updating missing values, for example some rows have industry data, others dont, so we did a self join with update to fill these inconsistencies
+
+``` sql
+UPDATE final_table AS t1
+SET industry = t2.industry
+FROM final_table AS t2
+WHERE t1.industry = '' AND t2.industry IS NOT NULL;
+```
+
+
 
 
 
