@@ -7,4 +7,4 @@ There is CSV file which contains job layoffs by company, city, country ,number o
 
 ## 2. CSV file used:
 
-CSV File used for this project is [here]() 
+CSV File used for this project is [here](https://github.com/theatallah/datacleaning_using_postgres/blob/main/csv%20files/layoffs%20cleaned.csv) 
