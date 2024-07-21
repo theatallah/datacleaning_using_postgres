@@ -7,4 +7,4 @@ There is CSV file which contains job layoffs by company, city, country ,number o
 
 ## 2. CSV file used:
 
-CSV File used for this project is [here]() 
+CSV File used for this project is [here](/csv files/layoffs cleaned.csv) 
